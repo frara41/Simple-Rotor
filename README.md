@@ -15,7 +15,7 @@ A maior parte dos componentes mecânicos e elétricos do projeto podem ser obtid
 
 ## Motores DC:
 
-Foi feita a opção pelo uso de motores DC no projeto, devido a facilidade de obtenção  e simplicidade de controle via software. Os motores para o projeto podem ser obtidos de fontes diversas (sucata!), incluindo brinquedos, ferramentas e eletrodomésticos a bateria, Impressoras a jato de tinta, componentes automotivos,  dentre outros. Recomenda-se o uso de motores com tensão nominal de funcionamento na faixa dos 5 a 12 volts.
+Foi feita a opção pelo uso de motores DC no projeto, devido a facilidade de obtenção, simplicidade de controle via software, e possibilidade de "ampliação de escala" de forma simples. Os motores para o projeto podem ser obtidos de fontes diversas (sucata!), incluindo brinquedos, ferramentas e eletrodomésticos a bateria, Impressoras a jato de tinta, componentes automotivos,  dentre outros. A dimensão dos motores necessários é dependente da massa total dos arranjos de antenas que se pretende mover. Antenas "leves" (conjunto menor que 2 ou 3 kg) podem ser movidas por motores com tensão nominal de funcionamento na faixa dos 5 a 12 volts.
 
 Os motores podem ser obtidos já com uma caixa de redução associada, ou  as caixas de redução podem ser obtidas em sucatas de eletrodomésticos, brinquedos e ferramentas elétricas e adaptadas ao motor. Recomenda-se o uso de  motores e caixas de redução que forneçam, para os eixos do rotor,  uma rotação final menor ou igual a  5 RPM. 
 
@@ -27,7 +27,7 @@ A informação da posição de apontamento do rotor, fundamental para o funciona
 
 ## Construção mecânica:
 
-A construção mecânica do rotor pode ser desenvolvida de diversas formas, levando-se em consideração as dimensões e pesos das antenas utilizadas, e os motores e caixas de redução obtidos. Os protótipos apresentados aqui consistem em  caixas de madeira, abrigando os motores DC, potenciômetros de feedback de posição e engrenagens e/ou polias e correias utilizadas para transmissão de torque entre os componentes mecânicos.
+A construção mecânica do rotor pode ser desenvolvida de diversas formas, levando-se em consideração as dimensões e pesos das antenas utilizadas, e os motores e caixas de redução obtidos. Os protótipos apresentados aqui foram desenvolvidos para apontar antenas direcionais caseiras de pequeno porte, e consistem em  caixas de madeira, abrigando os motores DC, potenciômetros de feedback de posição e engrenagens e/ou polias e correias utilizadas para transmissão de torque entre os componentes mecânicos.
 
 O protótipo 01 é um rotor apenas de azimute, usando a caixa de redução de um expremedor de laranjas e um pequeno motor DC com redução. Foi  construído inicialmente para testar os códigos de controle. O Protótipo 02 (em construção em 20250124) manteve a construção de madeira, mas já utiliza motores já adquiridos com a redução adequada.  
 
