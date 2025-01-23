@@ -36,4 +36,19 @@ O protótipo 01 é um rotor apenas de azimute, usando a caixa de redução de um
 O controle do Motor e comunicação com o computador é gerenciada por meio de uma placa de desenvolvimento tipo Arduino. A escolha da placa não é crítica, desde que apresente pelo menos 2 entradas analógicas e saídas tipo PWM para controle de velocidade do rotor.
 A caixa da interface de controle contém as portas de conexão para o rotor (energia e sensores), conector de entrada de energia (12v dc) e entrada USB para ca conexão com o computador de controle. A caixa de interface contém ainda um visor OLED para apresentar a medida da posição do rotor, conforme lida pelo Arduino.
 
+## Softwares de controle:
+
+O controle do rotor é realizado por meio de uma ponte H, comandada por uma placa de desenvolvimento tipo Arduino. A aplicação "RotorSerialPointPIDOled.ino", desenvolvida em C++, recebe uma informação de azimute e elevação via porta serial (USB), calcula o erro em relação a posição corrente do rotor, e atua uma função  de correção (velocidade, via PWM) para direcionar o rotor para o azimute e elevação recebidos. 
+
+A aplicação "RotorPotCall" é utilizada na calibração inicial de cada protótipo de rotor, para obtenção dos valores de leitura analógicas dos potenciômetros de controle para os valores de -180 e + 180 do rotor, valores estes que precisam ser inseridos na aplicação de controle.
+
+Uma aplicação em Phyton, "GPreader", rodando no computador de controle,  é utilizada para: 
+>> Estabelecer uma conexão TCPIP com o software de predição GPredict (https://github.com/csete/gpredict), 
+>> Receber  dados de apontamento (azimute e elevação) para um satélite selecionado, utilizando uma implementação em Python de uma parte da bibliteca Hamblib/ROTCL.
+>> Obter o quadrante de origem e o sentido da trajetória do satélite
+>> Definir a posição inicial para partida do rotor
+>> Enviar os dados de azimute e elevação via porta serial
+
+
+
 
