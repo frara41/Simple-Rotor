@@ -43,11 +43,11 @@ O controle do rotor é realizado por meio de uma ponte H, comandada por uma plac
 A aplicação "RotorPotCall" é utilizada na calibração inicial de cada protótipo de rotor, para obtenção dos valores de leitura analógicas dos potenciômetros de controle para os valores de -180 e + 180 do rotor, valores estes que precisam ser inseridos na aplicação de controle.
 
 Uma aplicação em Phyton, "GPreader", rodando no computador de controle,  é utilizada para: 
->> Estabelecer uma conexão TCPIP com o software de predição GPredict (https://github.com/csete/gpredict), 
->> Receber  dados de apontamento (azimute e elevação) para um satélite selecionado, utilizando uma implementação em Python de uma parte da bibliteca Hamblib/ROTCL.
->> Obter o quadrante de origem e o sentido da trajetória do satélite
->> Definir a posição inicial para partida do rotor
->> Enviar os dados de azimute e elevação via porta serial
++ Estabelecer uma conexão TCPIP com o software de predição GPredict (https://github.com/csete/gpredict), 
++ Receber  dados de apontamento (azimute e elevação) para um satélite selecionado, utilizando uma implementação em Python de parte da bibliteca Hamblib/ROTCL.
++ Obter o quadrante de origem e o sentido da trajetória do satélite
++ Definir a posição inicial para partida do rotor
++ Enviar os dados de azimute e elevação via porta serial
 
 
 
