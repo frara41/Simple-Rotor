@@ -45,7 +45,7 @@ A aplicação "RotorPotCall" é utilizada na calibração inicial de cada protó
 Uma aplicação em Phyton, "GPreader", rodando no computador de controle,  é utilizada para: 
 + Estabelecer uma conexão TCPIP com o software de predição GPredict (https://github.com/csete/gpredict), 
 + Receber  dados de apontamento (azimute e elevação) para um satélite selecionado, utilizando uma implementação em Python de parte da bibliteca Hamblib/ROTCL.
-+ Obter o quadrante de origem e o sentido da trajetória do satélite
++ Obter, a partir dos primeiros dados de azimute recebidos pela aplicação, o quadrante de origem e o sentido da trajetória do satélite
 + Definir a posição inicial para partida do rotor
 + Enviar os dados de azimute e elevação via porta serial
 
