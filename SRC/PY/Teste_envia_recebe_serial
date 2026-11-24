@@ -1,0 +1,18 @@
+'''
+Teste envia recebe Serial em 20261123
+> Estabelece uma conexão serial com uma porta com
+> recebe um input de teclado com azimute e elevação
+> Envia o input recebido via serial para o Arduino
+> Lê resposta do arduino e imprime
+'''
+
+import serial
+arduino = serial.Serial('COM5', 9600, timeout=.5)
+
+while True:
+    msg = str(input("entre azimute em graus (-270<az>270) e elevação (0<el<90). Formato  az:el "))
+    msgb = bytes(msg, "utf-8")  # converte a string em bytes..
+    arduino.write(msgb)
+    data = arduino.readline()[:-2] #the last bit gets rid of the new-line chars
+    data2 = data.decode()
+    print(data2)
